@@ -5,6 +5,7 @@ Silly little app that uses the EFF large word list to generate [diceware](https:
 # Usage
 
 By default with no arguments dicey will generate a 6 word passphrase.
+
     cargo run
 
 
