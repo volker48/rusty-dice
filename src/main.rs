@@ -8,7 +8,7 @@ fn main() {
         [_, arg] => arg,
         _ => "6",
     };
-    let num_words: usize = num.parse().unwrap();
+    let num_words: usize = num.parse().unwrap_or(6);
     let mut rng = thread_rng();
     let raw_words = include_str!("wordlist.txt");
     let words: Vec<&str> = raw_words.lines().collect();
